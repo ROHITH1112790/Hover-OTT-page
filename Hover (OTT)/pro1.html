@@ -1,0 +1,72 @@
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover | Login Page |</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="#"><img src="logo9.png" alt="logo"></a>
+    </nav>
+    <div class="form-wrapper">
+        
+        <div class="form-head">
+        <h2>Sign In</h2>
+        </div>
+        <form action="#">
+            <div class="form-control">
+                <input type="text" required>
+                <label>Email or phone number</label>
+            </div>
+            <div class="form-control">
+                <input  type="password" id="psw" required>
+                <label>Password</label>
+            </div>
+            <p id="demo"></p>
+            <div class="form-date">
+                <input type="date">
+            </div>
+            <button type="submit" onclick="func1()">Sign In</button>
+            <div class="form-help"> 
+                <div class="remember-me">
+                    <input type="checkbox" id="remember-me">
+                    <label for="remember-me">Remember me </label>
+                </div>
+                <a href="https://www.facebook.com/login.php">| Facebook Login</a>
+            </div>
+        </form>
+        
+    </div>
+    <script>
+        function func1(){
+        var p=document.getElementById("psw").value;
+        if(p.length<=8 || (p[0]>=65 || p[0]<=91)){
+            let txt="Invalid Password : Length>=8";
+            document.getElementById("demo").innerHTML=txt;
+        }}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover | Video Streaming</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            border: 3px solid #90ee90;
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 10px;
+            color: #90ee90;
+            ;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav img {
+            width: 100px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav li {
+            margin-right: 20px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .search-bar {
+            margin-bottom: 20px;
+        }
+
+        .login {
+            margin-bottom: 20px;
+        }
+
+        .section-heading {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .video-list {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .video-item {
+            width: calc(33.33% - 20px);
+            margin: 10px;
+            padding: 10px;
+            background-color: #90ee90;
+            border-radius: 5px;
+            transition: transform 0.3s;
+            /* Add transition for smooth effect */
+        }
+
+        .video-item img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .video-item:hover img {
+            transform: scale(1.1);
+            /* Increase the scale on hover */
+        }
+
+        /* Add new style for the #weekend section to position videos in a single row */
+        #weekend .video-list,
+        #watchlist .video-list {
+            flex-wrap: nowrap;
+            /* Prevent videos from wrapping to the next line */
+            justify-content: space-between;
+            /* Space out videos evenly in a row */
+        }
+
+        h2 {
+            right: 100px;
+            ;
+            color: #90ee90;
+            font-size: 1rem;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="#"><img src="logo9.png" alt="Hover Logo"></a>
+        <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><input type="text" class="search-bar" placeholder="Search"></li>
+            <li><a href="#login" class="login">Login</a></li>
+            <li><a href="#weekend">Weekend Drama</a></li>
+            <li><a href="#watchlist">Watch List</a></li>
+            <li><a href="#downloads">Downloads</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section id="weekend">
+            <h2 class="section-heading">Weekend Drama</h2>
+            <div class="video-list">
+                <!-- Placeholder videos for demonstration purposes -->
+                <div class="video-item">
+                    <img src="large-movie7.jpg" alt="Video 1">
+
+                </div>
+                <div class="video-item">
+                    <img src="large-movie2.jpg" alt="Video 2">
+
+                </div>
+                <div class="video-item">
+                    <img src="large-movie3.jpg" alt="Video 3">
+
+                </div>
+                <div class="video-item">
+                    <img src="large-movie4.jpg" alt="Video 3">
+
+                </div>
+                <div class="video-item">
+                    <img src="large-movie6.jpg" alt="Video 3">
+
+                </div>
+            </div>
+        </section>
+
+        <section id="watchlist">
+            <h2 class="section-heading">Watch List</h2>
+            <div class="video-list">
+                <!-- Placeholder videos for demonstration purposes -->
+                <div class="video-item">
+                    <img src="1.jpg" alt="Watch List 1">
+
+                </div>
+                <div class="video-item">
+                    <img src="2.jpg" alt="Watch List 2">
+
+                </div>
+                <div class="video-item">
+                    <img src="3.jpg" alt="Watch List 3">
+
+                </div>
+            </div>
+        </section>
+
+        <section id="downloads">
+            <h2 class="section-heading">Downloads</h2>
+            <p>Download your favorite videos to watch offline.</p>
+        </section>
+    </main>
+</body>
+
+</html>
